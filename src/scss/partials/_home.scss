@@ -1,7 +1,7 @@
 #home {
   height: calc(100vh - 100px);
   position: relative;
-  margin-top: 56px;
+
 
   @media (min-width: 768px) {
    
@@ -21,7 +21,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: #7a8086;
+      background-color: #1f2022;
       opacity: 0.5;
     }
     .intro {

@@ -21,31 +21,39 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .section-header {
+
+  width: 50%;
+
+  .solidFeedingImage {
+    position: absolute;
+    right: 20%; /* Distance from right side */
+    max-width: 200px; /* Adjust this value to desired size */
+  
+    transform: translateY(-80%);
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
   .section-title {
+    margin-top: 4rem;
     font-weight: bold;
-    color: #4e4e4e;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     position: relative;
     margin-bottom: 2rem;
-    span {
-      color: #248eff;
-    }
-    &:after {
-      content: '';
-      content: '';
-      display: block;
-      height: 3px;
-      width: 70px;
-      background: #248eff;
-      position: absolute;
-      top: 45px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+   
+   
   }
   .section-subtitle {
     max-width: 700px;
-    color: #6f6f6f;
-    font-size: 0.9rem;
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
+  
+  .btn {
+    background-color: #fcd100;
+  }
+
+  
 }

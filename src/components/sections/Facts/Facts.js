@@ -1,44 +1,46 @@
 import React from 'react';
-
 import Section from '../../../HOC/Section';
-import bgImage from '../../../assets/img/facts_bg.jpg';
+import ISO1 from '../../../assets/img/ISO1.jpg';
+import ISO2 from '../../../assets/img/ISO2.jpg';
+import ISO3 from '../../../assets/img/ISO3.jpg';
 
 const Facts = () => {
   return (
     <Section id='facts'>
-      <div
-        className='facts-container'
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
-        <div className='container pt-5 pb-4'>
+      <div className='facts-container'>
+        <div className='container pt-5 pb-3'>
           <div className='row'>
-            <div className='col-sm-6 col-md-3 text-center mb-4'>
-              <div className='mb-2 facts-icon'>
-                <i className='fas fa-users' />
+            <div className='col-sm-6 col-md-4 text-center'>
+              <div className="ISO1"> 
+                <img src={ISO1} alt="ISO1" className="IOS1" />
               </div>
-              <h4 className='facts-counter text-light'>780</h4>
-              <h5 className='facts-title text-light'>Active Members</h5>
+                            
+                            
+              <h5 className='facts-title'>Clients</h5>
             </div>
-            <div className='col-sm-6 col-md-3 text-center mb-4'>
-              <div className='mb-2 facts-icon'>
-                <i className='fas fa-grin-beam' />
+
+            <div className="ISO1"> 
+                <img src={ISO1} alt="ISO1" className="IOS1" />
               </div>
-              <h4 className='facts-counter text-light'>1004</h4>
-              <h5 className='facts-title text-light'>Happy Clients</h5>
-            </div>
-            <div className='col-sm-6 col-md-3 text-center mb-4'>
+           
+            <div className='col-sm-6 col-md-4 text-center'>
               <div className='mb-2 facts-icon'>
                 <i className='fas fa-project-diagram' />
               </div>
-              <h4 className='facts-counter text-light'>2850</h4>
-              <h5 className='facts-title text-light'>Total Projects</h5>
+              
+              <h5 className='facts-title'>Completed Projects</h5>
             </div>
-            <div className='col-sm-6 col-md-3 text-center mb-4'>
+
+            <div className="ISO1"> 
+                <img src={ISO1} alt="ISO1" className="IOS1" />
+              </div>
+
+            <div className='col-sm-6 col-md-4 text-center'>
               <div className='mb-2 facts-icon'>
                 <i className='fas fa-trophy' />
               </div>
-              <h4 className='facts-counter text-light'>56</h4>
-              <h5 className='facts-title text-light'>Awards</h5>
+              
+              <h5 className='facts-title'>Years in Experience</h5>
             </div>
           </div>
         </div>

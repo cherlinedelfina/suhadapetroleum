@@ -13,9 +13,10 @@ const sections = () => {
     <Fragment>
       <Home />
       <About />
+      <Facts />
       <Service />
       <Blog />
-      <Facts />
+      
       <Contact />
       <MapMarker />
     </Fragment>
