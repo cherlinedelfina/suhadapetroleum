@@ -1,10 +1,10 @@
 #home {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 100px);
   position: relative;
   margin-top: 56px;
 
   @media (min-width: 768px) {
-    margin-top: 115px;
+   
   }
   > div {
     height: 100%;
@@ -21,32 +21,37 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: #003267;
-      opacity: 0.7;
+      background-color: #7a8086;
+      opacity: 0.5;
     }
     .intro {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      position: relative;
-      z-index: 2;
+      left: 1px;
+      
       .title {
         font-weight: bold;
-
+        
         @media (min-width: 768px) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
       }
+    
       .sub-title {
+        margin-top: 20px;
         font-weight: normal;
         max-width: 700px;
-        margin: 0 auto;
         letter-spacing: 1px;
         font-size: 1rem;
 
         @media (min-width: 768px) {
           font-size: 1.2rem;
         }
+      }
+
+      .highlight {
+        color: #FFD700; /* Yellow color */
       }
     }
   }

@@ -2,7 +2,6 @@ import React from 'react';
 
 import Section from '../../../HOC/Section';
 import bgImage from '../../../assets/img/home_bg.jpg';
-import Link from '../../UI/Link/Link';
 
 const home = () => {
   return (
@@ -13,17 +12,11 @@ const home = () => {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className='intro container text-center text-light'>
-            <h1 className='title'>WELCOME</h1>
-            <h2 className='sub-title mb-4'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              laborum minus molestiae.
-            </h2>
-            <Link target='about' classes='btn btn-primary rounded-0 mr-2'>
-              Learn More
-            </Link>
-            <Link target='contact' classes='btn btn-light text-dark rounded-0'>
-              Contact Us
-            </Link>
+            <h1 className='title'>
+            Your Trusted <span className="highlight">Supplier</span> and <span className="highlight">Contractor</span><br /> 
+          for Quality Products and Services </h1>
+            <h2 className='sub-title mb-4'>Supplying to various industries across Indonesia since 2000 </h2>
+            
           </div>
         </div>
       </div>
