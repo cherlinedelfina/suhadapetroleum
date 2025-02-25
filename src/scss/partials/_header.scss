@@ -27,6 +27,14 @@
       font-size: 0.5rem;
     }
   }
+  .logoImage {
+    width: 200px; 
+    height: auto;
+}
+
+.logo {
+  text-align: left; 
+}
   .navbar {
     box-shadow: 0px 2px 6px rgba(43, 73, 111, 0.2);
     &.scrolled {
@@ -39,15 +47,15 @@
     }
   }
   .nav-link {
-    text-transform: uppercase;
+    
     font-weight: 700;
-    color: #4e4e4e !important;
+    color: #ffffff !important;
     font-size: 0.85rem;
     &:hover {
-      color: darken(#248eff, 6%) !important;
+      color: darken(#000000, 6%) !important;
     }
     &.active {
-      color: lighten(#248eff, 5%) !important;
+      color: lighten(#000000, 5%) !important;
     }
     @media (min-width: 768px) {
       padding: 1rem 1rem;
