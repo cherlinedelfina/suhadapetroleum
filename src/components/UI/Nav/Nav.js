@@ -21,7 +21,7 @@ const Nav = () => {
     });
   }, []);
   return (
-    <nav className={`navbar navbar-expand-md bg-light ${navClass}`}>
+    <nav className={`navbar navbar-expand-md  ${navClass}`}>
       <div className='container'>
         <div className='logo'>
           <img src={logo} alt='about company' className='logoImage' />
