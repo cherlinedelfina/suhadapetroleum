@@ -10,37 +10,31 @@ const Facts = () => {
       <div className='facts-container'>
         <div className='container pt-5 pb-3'>
           <div className='row'>
+            {/* First Column */}
             <div className='col-sm-6 col-md-4 text-center'>
-              <div className="ISO1"> 
+              <div className="ISO-container"> 
                 <img src={ISO1} alt="ISO1" className="IOS1" />
               </div>
-                            
-                            
-              <h5 className='facts-title'>Clients</h5>
+              <h5 className='facts-title'>Quality</h5>
+              <h5 className='facts-title'>ISO 9001:2005</h5>
             </div>
 
-            <div className="ISO1"> 
-                <img src={ISO1} alt="ISO1" className="IOS1" />
-              </div>
-           
+            {/* Second Column */}
             <div className='col-sm-6 col-md-4 text-center'>
-              <div className='mb-2 facts-icon'>
-                <i className='fas fa-project-diagram' />
+              <div className="ISO-container"> 
+                <img src={ISO3} alt="ISO2" className="IOS1" />
               </div>
-              
-              <h5 className='facts-title'>Completed Projects</h5>
+              <h5 className='facts-title'>Environmental</h5>
+              <h5 className='facts-title'>ISO 14001-2015</h5>
             </div>
 
-            <div className="ISO1"> 
-                <img src={ISO1} alt="ISO1" className="IOS1" />
-              </div>
-
+            {/* Third Column */}
             <div className='col-sm-6 col-md-4 text-center'>
-              <div className='mb-2 facts-icon'>
-                <i className='fas fa-trophy' />
+              <div className="ISO-container"> 
+                <img src={ISO3} alt="ISO3" className="IOS1" />
               </div>
-              
-              <h5 className='facts-title'>Years in Experience</h5>
+              <h5 className='facts-title'>Health & Safety</h5>
+              <h5 className='facts-title'>ISO 45001-2015</h5>
             </div>
           </div>
         </div>

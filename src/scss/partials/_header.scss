@@ -1,58 +1,31 @@
-.header {
-  position: relative; 
-  background-color: #b8b238;
-  z-index: 999; }
-
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 40%;
-  height: 100%; 
-  background-color: white; 
-  transform: skew(-10deg); 
-  z-index: -1; 
-}
-
-.container {
-  max-width: 90%;
-}
-
-nav {
-  display: flex;
-  align-items: center; 
-  padding: 10px 20px; 
-}
-
-.logo {
-  margin-right: 10px;
-}
-
-.logoImage {
-  width: 350px; 
-  height: auto;
-}
-
 .navbar {
-  display: flex; 
-  list-style: none; 
-  margin-left: auto; /* Push items to the right */
-  padding: 0; /* Remove default padding */
+  background-color: #ffffff; /* Navbar background color */
+}
+
+.navbar-toggler {
+  background: transparent; /* Make sure the background is transparent */
+  border: none; /* Remove any borders */
+}
+
+.hamburger-icon {
+  width: 30px;  /* Adjust width and height according to your needs */
+  height: auto; /* Keep the aspect ratio */
+}
+
+.navbar-collapse {
+  transition: max-height 0.3s ease; /* Smooth transition for dropdown */
+}
+
+.navbar-toggler-icon {
+  background-color: black; /* Color for hamburger icon */
 }
 
 .nav-item {
-  margin: 15px; 
+  margin: 5px 0; /* Spacing between items */
 }
-
-.nav-link {
-  color: #ffffff; 
-  font-weight: 700; 
-  text-decoration: none; 
-  transition: color 0.3s; 
-}
-
-
-.nav-link:hover {
-  color: darken(#000000, 6%); /* Hover effect */
+.logoImage {
+  width: fit-content;
+  height: 100px;
+  max-width: 400px;
+  max-height: 100px;
 }

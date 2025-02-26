@@ -1,100 +1,63 @@
 import React from 'react';
-
 import Section from '../../../HOC/Section';
+import projects_bg from '../../../assets/img/projects_bg.jpg';
+import image1 from '../../../assets/img/image1.jpg'; // Update with actual image paths
+import image2 from '../../../assets/img/image2.jpg'; // Use real images
+import image3 from '../../../assets/img/image3.jpg';
+import image4 from '../../../assets/img/image4.jpg';
 
 const Service = () => {
   return (
     <Section id='services'>
-      <div className='container pt-2 pb-5'>
-        
-        <div className='section-content'>
-          <div className='row'>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-briefcase' />
+      <div className="bg-container" style={{ position: 'relative' }}>
+          <img src={projects_bg} alt="projects background" className="projects_bg" />
+          
+          {/* Outer Column Container */}
+          <div className="two-column-container" style={{ 
+            position: 'absolute', 
+            top: '50%', // Center vertically
+            left: '50%', // Center horizontally
+            transform: 'translate(-50%, -50%)', // Adjust position based on its size
+            width: '80%', // Adjust width as necessary
+            display: 'flex', // Display flex for two columns
+            justifyContent: 'space-around' // Space between columns
+          }}>
+            {/* Left Column */}
+            <div className="left-column" style={{ flex: '1', margin: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={image1} alt="Image 1" style={{ width: '50%', height: 'auto' }} />
+                <div style={{ padding: '10px' }}>
+                  <h5>Description for Image 1</h5>
+                  <p>This is a description for the first image. It gives details about the content shown in the image.</p>
                 </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Business Planning</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={image2} alt="Image 2" style={{ width: '50%', height: 'auto' }} />
+                <div style={{ padding: '10px' }}>
+                  <h5>Description for Image 2</h5>
+                  <p>This is a description for the second image. It adds context to what the image represents.</p>
                 </div>
               </div>
             </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-chart-bar' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Product Marketing</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
+
+            {/* Right Column */}
+            <div className="right-column" style={{ flex: '1', margin: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={image3} alt="Image 3" style={{ width: '50%', height: 'auto' }} />
+                <div style={{ padding: '10px' }}>
+                  <h5>Description for Image 3</h5>
+                  <p>This description is associated with the third image, providing insight into the image.</p>
                 </div>
               </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-fist-raised' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Risk Management</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='far fa-paper-plane' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Market Research</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-gem' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Business Financing</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='far fa-life-ring' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Suppport Team</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={image4} alt="Image 4" style={{ width: '50%', height: 'auto' }} />
+                <div style={{ padding: '10px' }}>
+                  <h5>Description for Image 4</h5>
+                  <p>Details about the fourth image can be explained here, giving more depth to the visual content.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </Section>
   );

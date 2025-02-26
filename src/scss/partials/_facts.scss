@@ -8,25 +8,13 @@
   }
 
   .IOS1 {
-    width: 300px;  /* Set a desired width */
+    width: 280px;  /* Set a desired width */
     height: 380px; /* Set a desired height */
     max-width: 300px; /* Optional if you want to ensure it never gets larger */
     max-height: 380px; /* Optional if you want to ensure it never gets larger */
 }
 
-.IOS2 {
-  width: 300px;  /* Set a desired width */
-  height: 380px; /* Set a desired height */
-  max-width: 300px; /* Optional if you want to ensure it never gets larger */
-  max-height: 380px; /* Optional if you want to ensure it never gets larger */
-}
 
-.IOS3 {
-  width: 300px;  /* Set a desired width */
-  height: 380px; /* Set a desired height */
-  max-width: 300px; /* Optional if you want to ensure it never gets larger */
-  max-height: 380px; /* Optional if you want to ensure it never gets larger */
-}
   .facts-container {
     background-color: rgb(238, 237, 237);
     
@@ -39,6 +27,7 @@
       font-weight: 700;
     }
     .facts-title {
+      margin-top: 10px;
       color: black;
     }
   }

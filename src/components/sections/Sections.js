@@ -16,9 +16,7 @@ const sections = () => {
       <Facts />
       <Service />
       <Blog />
-      
-      <Contact />
-      <MapMarker />
+     
     </Fragment>
   );
 };

@@ -1,52 +1,46 @@
 import React, { useState, useEffect } from 'react';
-
 import Link from '../Link/Link';
 import logo from '../../../assets/img/logo.jpg';
+import hamburgerIcon from '../../../assets/img/hamburger-icon.jpg'; // Adjust the path as needed
 
 const Nav = () => {
   const [navClass, setNavClass] = useState('');
-  const [toggeledNav, settoggeledNav] = useState(false);
+  const [toggledNav, setToggledNav] = useState(false);
 
   const toggleNav = () => {
-    settoggeledNav(!toggeledNav);
+    setToggledNav(!toggledNav);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      let navClass = '';
-      if (window.scrollY >= 200) {
-        navClass = 'scrolled';
-      }
-      setNavClass(navClass);
-    });
+    const handleScroll = () => {
+      setNavClass(window.scrollY >= 200 ? 'scrolled' : '');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   return (
-    <nav className={`navbar navbar-expand-md  ${navClass}`}>
+    <nav className={`navbar navbar-expand-md ${navClass}`}>
       <div className='container'>
         <div className='logo'>
           <img src={logo} alt='about company' className='logoImage' />
         </div>
-        <div
-          className={`navbar-toggler nav-icon ${(() => {
-            if (toggeledNav) return 'open';
-            return '';
-          })()}`}
+        <button
+          className={`navbar-toggler ${toggledNav ? 'open' : ''}`}
+          type='button'
           onClick={toggleNav}
+          aria-controls='navbarNav'
+          aria-expanded={toggledNav ? "true" : "false"}
+          aria-label='Toggle navigation'
         >
-          <span />
-          <span />
-          <span />
-        </div>
+          <img src={hamburgerIcon} alt="Menu" className="hamburger-icon" /> 
+        </button>
 
-        <div
-          className={`collapse navbar-collapse ${(() => {
-            if (toggeledNav) return 'show';
-            return '';
-          })()}`}
-        >
+        <div className={`collapse navbar-collapse ${toggledNav ? 'show' : ''}`} id='navbarNav'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link target='home' offset={-120} classes='nav-link'>
+              <Link target='home'  classes='nav-link'>
                 Home
               </Link>
             </li>

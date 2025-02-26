@@ -1,73 +1,120 @@
 import React from 'react';
-
 import Section from '../../../HOC/Section';
 
-import blogImage1 from '../../../assets/img/blog1.jpg';
-import blogImage2 from '../../../assets/img/blog2.jpg';
-import blogImage3 from '../../../assets/img/blog3.jpg';
+import Client1 from '../../../assets/img/client1.jpg'; 
+import Client2 from '../../../assets/img/client2.jpg';
+import Client3 from '../../../assets/img/client3.jpg';
+import Client4 from '../../../assets/img/client4.jpg'; 
+import Client5 from '../../../assets/img/client5.jpg'; 
+import Client6 from '../../../assets/img/client6.jpg'; 
+import Client7 from '../../../assets/img/client7.jpg'; 
+import Client8 from '../../../assets/img/client8.jpg'; 
+import Client9 from '../../../assets/img/client9.jpg'; 
+import Client10 from '../../../assets/img/client10.jpg'; 
+import Client11 from '../../../assets/img/client11.jpg'; 
+import Client12 from '../../../assets/img/client12.jpg'; 
+import Client13 from '../../../assets/img/client13.jpg'; 
+import Client14 from '../../../assets/img/client14.jpg'; 
 
 const Blog = () => {
   return (
     <Section id='blog'>
-      <div className='container pt-2 pb-5'>
-        <div className='section-header pt-5 pb-5 text-center'>
-          <h3 className='section-title'>
-            <span>Our </span>Blog
-          </h3>
-          <h6 className='section-subtitle mr-auto ml-auto'>
-            Individualized quality care that meets the total needs of the
-            patient Individualized quality care that quality care that
-            Individualized quality care that meets the total.
-          </h6>
-        </div>
-        <div className='section-content'>
+      <div className='blog-container'>
+        <div className='container'>
+          <div className='section-header'>
+            <h3 className='section-title text-center'>
+              Our Clients
+            </h3>
+          </div>
           <div className='row'>
-            <div className='col-lg-4 mb-3'>
-              <div className='card rounded-0'>
-                <img src={blogImage1} className='card-img-top' alt='Blog 1' />
-                <div className='card-body'>
-                  <h5 className='card-title'>High Quality Support</h5>
-                  <p className='card-text'>
-                    Exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                    cillum dolore eu fugiat nulla pariatur commodo
-                    consequat.cillum dolore eu fugiat pariatur....
-                  </p>
-                  <a href='#!' className='btn btn-sm btn-primary'>
-                    Read More
-                  </a>
-                </div>
+            {/* First Row - 6 Columns */}
+            <div className='col-sm-6 col-md-2 text-center'>
+              <div className="client-container"> 
+                <img src={Client1} alt="Client 1" className="clientImage" />
               </div>
             </div>
-            <div className='col-lg-4 mb-3'>
-              <div className='card rounded-0'>
-                <img src={blogImage2} className='card-img-top' alt='Blog 2' />
-                <div className='card-body'>
-                  <h5 className='card-title'>Research Financial</h5>
-                  <p className='card-text'>
-                    Exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                    cillum dolore eu fugiat nulla pariatur commodo
-                    consequat.cillum dolore eu fugiat pariatur....
-                  </p>
-                  <a href='#!' className='btn btn-sm btn-primary'>
-                    Read More
-                  </a>
-                </div>
+
+            <div className='col-sm-6 col-md-2 text-center'>
+              <div className="client-container"> 
+                <img src={Client2} alt="Client 2" className="clientImage" />
               </div>
             </div>
-            <div className='col-lg-4 mb-3'>
-              <div className='card rounded-0'>
-                <img src={blogImage3} className='card-img-top' alt='Blog 3' />
-                <div className='card-body'>
-                  <h5 className='card-title'>Business Deal</h5>
-                  <p className='card-text'>
-                    Exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                    cillum dolore eu fugiat nulla pariatur commodo
-                    consequat.cillum dolore eu fugiat pariatur....
-                  </p>
-                  <a href='#!' className='btn btn-sm btn-primary'>
-                    Read More
-                  </a>
-                </div>
+
+            <div className='col-sm-6 col-md-2 text-center'>
+              <div className="client-container"> 
+                <img src={Client3} alt="Client 3" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-2 text-center'>
+              <div className="client-container"> 
+                <img src={Client4} alt="Client 4" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-2 text-center'>
+              <div className="client-container"> 
+                <img src={Client5} alt="Client 5" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-2 text-center'>
+              <div className="client-container"> 
+                <img src={Client6} alt="Client 6" className="clientImage" />
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row - 4 Columns */}
+          <div className='row'>
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client7} alt="Client 7" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client8} alt="Client 8" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client9} alt="Client 9" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client10} alt="Client 10" className="clientImage" />
+              </div>
+            </div>
+          </div>
+
+          {/* Third Row - 4 Columns */}
+          <div className='row'>
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client11} alt="Client 11" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client12} alt="Client 12" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client13} alt="Client 13" className="clientImage" />
+              </div>
+            </div>
+
+            <div className='col-sm-6 col-md-3 text-center'>
+              <div className="client-container"> 
+                <img src={Client14} alt="Client 14" className="clientImage" />
               </div>
             </div>
           </div>
