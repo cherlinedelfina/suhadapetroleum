@@ -1,17 +1,17 @@
 #home {
-  height: calc(100vh - 100px); /* Set height of the home section */
+  height: calc(100vh - 100px); 
   position: relative;
   
   > div {
-    height: 100%; /* Make inner div full height */
+    height: 100%; 
   }
 
   .home-content {
-    position: absolute; /* Positioning to overlay on slideshow */
-    top: 20px; /* Adjust vertical position */
+    position: absolute; 
+    top: 20px; 
     left: 30px;
 
-    height: 100%; /* Ensure it covers full height */
+    height: 100%; 
     background-position: center;
     background-size: cover;
 
@@ -23,26 +23,26 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: #1f2022; /* Dark overlay */
-      opacity: 0.5; /* Opacity for the overlay */
+      background-color: #1f2022;
+      opacity: 0.5; 
     }
 
     
   }
 }
 
-/* Slideshow Styles */
+
 .slideshow-container {
   position: relative;
-  width: 100%; /* Full width for the slideshow */
-  overflow: hidden; /* Hide overflow for images */
+  width: 100%; 
+  overflow: hidden; 
 }
 
 .mySlides {
-  display: none; /* Hide slides by default */
+  display: none; 
 }
 
-/* Navigation buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -53,7 +53,7 @@
   color: white;
   font-weight: bold;
   font-size: 18px;
-  z-index: 2; /* Ensure buttons are visible above slides */
+  z-index: 2;
 }
 
 /* Dots/circles */
@@ -69,5 +69,5 @@
 
 .active,
 .dot:hover {
-  background-color: #717171; /* Change color on hover */
+  background-color: #717171; 
 }

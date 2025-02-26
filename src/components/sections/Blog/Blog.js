@@ -27,7 +27,7 @@ const Blog = () => {
             </h3>
           </div>
           <div className='row'>
-            {/* First Row - 6 Columns */}
+          
             <div className='col-sm-6 col-md-2 text-center'>
               <div className="client-container"> 
                 <img src={Client1} alt="Client 1" className="clientImage" />
@@ -65,7 +65,7 @@ const Blog = () => {
             </div>
           </div>
 
-          {/* Second Row - 4 Columns */}
+        
           <div className='row'>
             <div className='col-sm-6 col-md-3 text-center'>
               <div className="client-container"> 
@@ -92,7 +92,7 @@ const Blog = () => {
             </div>
           </div>
 
-          {/* Third Row - 4 Columns */}
+        
           <div className='row'>
             <div className='col-sm-6 col-md-3 text-center'>
               <div className="client-container"> 

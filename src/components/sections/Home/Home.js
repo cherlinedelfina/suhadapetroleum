@@ -6,14 +6,14 @@ import bg3 from '../../../assets/img/bg3.jpg';
 import bg4 from '../../../assets/img/bg4.jpg';
 
 const Home = () => {
-  const [slideIndex, setSlideIndex] = useState(1); // Using state for slides
+  const [slideIndex, setSlideIndex] = useState(1); 
 
   const plusSlides = (n) => {
-    // Update slide index based on plusSlides
+    
     setSlideIndex(prevIndex => {
       let newIndex = prevIndex + n;
-      if (newIndex > 4) newIndex = 1; // Wrap to first slide
-      if (newIndex < 1) newIndex = 4; // Wrap to last slide
+      if (newIndex > 4) newIndex = 1; 
+      if (newIndex < 1) newIndex = 4; 
       return newIndex;
     });
   };
@@ -26,19 +26,19 @@ const Home = () => {
     const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
     
-    // Ensure index is adjusted properly
+    
     if (n > slides.length) { n = 1; }
     if (n < 1) { n = slides.length; }
 
-    // Hide all slides
+    
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
     }
-    // Remove active class from all dots
+   
     for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    // Show current slide and activate the corresponding dot
+    
     slides[n - 1].style.display = "block";  
     dots[n - 1].className += " active";
   };
@@ -47,24 +47,24 @@ const Home = () => {
     const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
 
-    // First call to show current slide
+    
     showSlides(slideIndex);
 
     const timer = setInterval(() => {
-      plusSlides(1); // Automatically move to the next slide
-    }, 5000); // Change image every 5 seconds
+      plusSlides(1); 
+    }, 5000); 
 
-    return () => clearInterval(timer); // Cleanup on unmount
-  }, [slideIndex]); // Dependency on slideIndex, so it updates correctly
+    return () => clearInterval(timer); 
+  }, [slideIndex]); 
 
   return (
     <Section id='home'>
       <div>
         
 
-        {/* Slideshow container */}
+  
         <div className="slideshow-container">
-          {/* Full-width images */}
+      
           <div className="mySlides">
             <img src={bg1} style={{ width: "100%", height: "calc(100vh - 100px)", objectFit: "cover" }} alt="Image 1" />
           </div>
@@ -81,13 +81,13 @@ const Home = () => {
             <img src={bg4} style={{ width: "100%", height: "calc(100vh - 100px)", objectFit: "cover" }} alt="Image 4" />
           </div>
 
-          {/* Next and previous buttons */}
+         
           <a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
           <a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
         </div>
         <br />
 
-        {/* The dots/circles */}
+     
         <div style={{ textAlign: "center" }}>
           <span className="dot" onClick={() => currentSlide(1)}></span>
           <span className="dot" onClick={() => currentSlide(2)}></span>

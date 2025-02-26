@@ -10,7 +10,7 @@ const Facts = () => {
       <div className='facts-container'>
         <div className='container pt-5 pb-3'>
           <div className='row'>
-            {/* First Column */}
+           
             <div className='col-sm-6 col-md-4 text-center'>
               <div className="ISO-container"> 
                 <img src={ISO1} alt="ISO1" className="IOS1" />
@@ -19,7 +19,7 @@ const Facts = () => {
               <h5 className='facts-title'>ISO 9001:2005</h5>
             </div>
 
-            {/* Second Column */}
+         
             <div className='col-sm-6 col-md-4 text-center'>
               <div className="ISO-container"> 
                 <img src={ISO3} alt="ISO2" className="IOS1" />
@@ -28,7 +28,7 @@ const Facts = () => {
               <h5 className='facts-title'>ISO 14001-2015</h5>
             </div>
 
-            {/* Third Column */}
+           
             <div className='col-sm-6 col-md-4 text-center'>
               <div className="ISO-container"> 
                 <img src={ISO3} alt="ISO3" className="IOS1" />
