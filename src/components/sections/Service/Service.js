@@ -1,112 +1,132 @@
-import React from 'react';
 
-import Section from '../../../HOC/Section';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import workshop1 from "../../../assets/img/workshop1.png";
+import workshop2 from "../../../assets/img/workshop2.png";
+import serviceImage from "../../../assets/img/workshop3.png"; // Background image
+import servicebg from "../../../assets/img/services_bg.png";
+
+const FacilitiesCarousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true, 
+  };
+
+  const images = [workshop1, workshop2];
+
+  return (
+    <div className="h-screen flex justify-center items-center">
+  <Slider {...settings} className="w-[750px]">
+    {images.map((src, index) => (
+      <div key={index} className="flex justify-center">
+        <img
+          src={src}
+          alt={`Facility ${index + 1}`}
+          className="rounded-lg mx-auto"
+          style={{
+            width: "1000px",
+            height: "333px",
+            objectFit: "cover",
+          }}
+        />
+      </div>
+    ))}
+  </Slider>
+    </div>
+  );
+};
+
 
 const Service = () => {
   return (
-    <Section id='services'>
-      <div className='container pt-2 pb-5'>
-        <div className='section-header pt-5 pb-5 text-center'>
-          <h3 className='section-title'>
-            <span>Our </span>Services
-          </h3>
-          <h6 className='section-subtitle mr-auto ml-auto'>
-            Individualized quality care that meets the total needs of the
-            patient Individualized quality care that quality care that
-            Individualized quality care that meets the total.
-          </h6>
-        </div>
-        <div className='section-content'>
-          <div className='row'>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-briefcase' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Business Planning</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-chart-bar' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Product Marketing</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-fist-raised' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Risk Management</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='far fa-paper-plane' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Market Research</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='fas fa-gem' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Business Financing</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-6 col-lg-4 mb-3'>
-              <div className='service-box d-flex'>
-                <div className='service-icon mr-4'>
-                  <i className='far fa-life-ring' />
-                </div>
-                <div className='service-body'>
-                  <h5 className='service-title'>Suppport Team</h5>
-                  <p className='service-description'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Section>
+    <div>
+      
+      <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
+      <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
+      <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
+
+
+      
+      <div className="row">
+  <div className="column">
+    <h2 className="text-3xl font-bold mb-6 text-black mt-16">Our Services</h2>
+    <ul className="list-disc pl-5 text-xl text-black">
+      <li>General Overhaul Pump & Gas Engine Service</li>
+      <li>Pump & Gas Engine Repair</li>
+      <li>Project Management & Technical Support</li>
+      <li>Planning & Scheduling</li>
+      <li>Procurement & Expediting</li>
+      <li>On-Site Installation</li>
+      <li>Start-Up & Commissioning</li>
+      <li>Equipment Operation & Maintenance</li>
+      <li>Quality Assurance & Control</li>
+    </ul>
+  </div>
+
+  <div className="column">
+    <img
+      src={serviceImage}
+      alt="Service Image"
+      className="w-[200px] rounded-lg shadow-lg object-cover"
+    />
+  </div>
+</div>
+
+
+
+      <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
+      <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
+    
+  
+
+      {/* Our Facilities Section */}
+      <section
+  className="bg-cover bg-center py-12 px-6 relative flex flex-col items-center"
+  style={{ 
+    backgroundImage: `url(${servicebg})`, 
+    backgroundSize: "cover",  // Ensures it covers the full container
+    backgroundRepeat: "no-repeat",  // Prevents tiling
+    backgroundPosition: "center center",  // Centers the image
+    width: "100%", // Ensures full-width coverage
+  }}
+>
+  
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  {/* Content */}
+  <div className="relative z-10 text-white text-center">
+  <p className="font-semibold mb-4">&nbsp;</p>
+    <h1 className="text-2xl font-bold mb-6 mt-20">Our Facilities</h1>
+    <p className="font-semibold mb-4">&nbsp;</p>
+    
+    {/* Adjusted FacilitiesCarousel */}
+    <div className="w-[200px] ">
+      <FacilitiesCarousel />
+    </div>
+    
+
+    <p className="text-sm mt-4">
+      📍 Laksana Business Park Block MB 12A-B, Jl. Raya Kali Baru, Laksana, Kecamatan Pakuhaji, Kabupaten Tangerang, Banten 15570
+    </p>
+    <p className="font-semibold mb-4">&nbsp;</p>
+  </div>
+</section>
+
+
+      
+
+    </div>
   );
 };
 
 export default Service;
+
+
