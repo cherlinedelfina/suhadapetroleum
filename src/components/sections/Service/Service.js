@@ -15,7 +15,7 @@ const Service = () => {
           
           <div className="left-column">
             <div className="inner-column">
-             
+            <img src={image1} alt="NOV Reciprocating Pump Model  1759 Package" className="column-image" />
               <div className="column-description">
                 <h5>NOV Reciprocating Pump Model  1759 Package</h5>
             
@@ -26,7 +26,9 @@ const Service = () => {
          
           <div className="right-column">
             <div className="inner-column">
-              <img src={image2} alt="Image 2" className="column-image" />
+              <img src={image2} alt="ARROW
+Gas Engine Model 
+C-106" className="column-image" />
               <div className="column-description">
                 <h5>ARROW
 Gas Engine Model 
