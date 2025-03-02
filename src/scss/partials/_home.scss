@@ -56,7 +56,15 @@
   z-index: 2;
 }
 
-/* Dots/circles */
+.prev {
+  left: 10px; 
+}
+
+.next {
+  right: 10px; /* Adjust as necessary */
+}
+
+
 .dot {
   cursor: pointer;
   height: 15px;
