@@ -1,27 +1,102 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
 import Section from '../../../HOC/Section';
-import bgImage from '../../../assets/img/home_bg.jpg';
+import bg1 from '../../../assets/img/bg1.jpg'; 
+import bg2 from '../../../assets/img/bg2.jpg';
+import bg3 from '../../../assets/img/bg3.jpg';
+import bg4 from '../../../assets/img/bg4.jpg';
 
-const home = () => {
+const Home = () => {
+  const [slideIndex, setSlideIndex] = useState(1); 
+
+  const plusSlides = (n) => {
+    
+    setSlideIndex(prevIndex => {
+      let newIndex = prevIndex + n;
+      if (newIndex > 4) newIndex = 1; 
+      if (newIndex < 1) newIndex = 4; 
+      return newIndex;
+    });
+  };
+
+  const currentSlide = (n) => {
+    setSlideIndex(n);
+  };
+
+  const showSlides = (n) => {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    
+    
+    if (n > slides.length) { n = 1; }
+    if (n < 1) { n = slides.length; }
+
+    
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+   
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[n - 1].style.display = "block";  
+    dots[n - 1].className += " active";
+  };
+
+  useEffect(() => {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+
+    
+    showSlides(slideIndex);
+
+    const timer = setInterval(() => {
+      plusSlides(1); 
+    }, 5000); 
+
+    return () => clearInterval(timer); 
+  }, [slideIndex]); 
+
   return (
     <Section id='home'>
       <div>
-        <div
-          className='home-content p-5'
-          style={{ backgroundImage: `url(${bgImage})` }}
-        >
-          <div className='intro container text-center text-light'>
-            <h1 className='title'>
-            Your Trusted <span className="highlight">Supplier</span> and <span className="highlight">Contractor</span><br /> 
-          for Quality Products and Services </h1>
-            <h2 className='sub-title mb-4'>Supplying to various industries across Indonesia since 2000 </h2>
-            
+        
+
+  
+        <div className="slideshow-container">
+      
+          <div className="mySlides">
+            <img src={bg1} style={{ width: "100%", height: "calc(100vh - 100px)", objectFit: "cover" }} alt="Image 1" />
           </div>
+
+          <div className="mySlides">
+            <img src={bg2} style={{ width: "100%", height: "calc(100vh - 100px)", objectFit: "cover" }} alt="Image 2" />
+          </div>
+
+          <div className="mySlides">
+            <img src={bg3} style={{ width: "100%", height: "calc(100vh - 100px)", objectFit: "cover" }} alt="Image 3" />
+          </div>
+
+          <div className="mySlides">
+            <img src={bg4} style={{ width: "100%", height: "calc(100vh - 100px)", objectFit: "cover" }} alt="Image 4" />
+          </div>
+
+         
+          <a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
+          <a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
+        </div>
+        <br />
+
+     
+        <div style={{ textAlign: "center" }}>
+          <span className="dot" onClick={() => currentSlide(1)}></span>
+          <span className="dot" onClick={() => currentSlide(2)}></span>
+          <span className="dot" onClick={() => currentSlide(3)}></span>
+          <span className="dot" onClick={() => currentSlide(4)}></span>
         </div>
       </div>
     </Section>
   );
 };
 
-export default home;
+export default Home;
