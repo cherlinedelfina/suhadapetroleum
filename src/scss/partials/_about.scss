@@ -1,19 +1,47 @@
-.two-column-container {
-  display: flex; /* Flexbox layout for two columns */
-  justify-content: space-between; /* Space between columns */
-  align-items: flex-start; /* Align items to the top */
+.section-title{
+    text-align: center;
 }
 
-.text-column {
-  flex: 1; /* Allow the text column to flex */
-  margin-right: 20px; /* Space between text and image */
+.section-subtitle {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.image-column {
-  flex: 1; /* Allow the image column to flex */
+.section-subtitle {
+    font-size: 17px;
 }
 
-.solidFeedingImage {
-  width: 100%;
-  height: auto; 
-  border-radius: 5px; /* Optional: Rounded corners */} 
+.section-header {
+    width: 100%;
+}
+
+.section-header .section-title{
+    color: #b8b238;
+}
+
+.image-container {
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+    height: 100%;                
+}
+.office-image {
+    height: auto;           /* Maintains aspect ratio */
+    max-height: 500px;      /* Constrain max height if needed */
+    width: auto;            /* Maintain aspect ratio */
+    max-width: 600px;       /* Constrain max width to 100px */
+}
+
+.section-subtitle2 {
+   text-align: center;
+}
+
+.section-subtitle2 {
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section-header .section-title{
+    color: #b8b238;
+}

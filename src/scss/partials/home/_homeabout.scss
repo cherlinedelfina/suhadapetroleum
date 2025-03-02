@@ -1,0 +1,19 @@
+.two-column-container {
+  display: flex; /* Flexbox layout for two columns */
+  justify-content: space-between; /* Space between columns */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.text-column {
+  flex: 1; /* Allow the text column to flex */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.image-column {
+  flex: 1; /* Allow the image column to flex */
+}
+
+.solidFeedingImage {
+  width: 100%;
+  height: auto; 
+  border-radius: 5px; /* Optional: Rounded corners */} 
