@@ -1,28 +1,47 @@
 import React from 'react';
-
+import '../../../scss/partials/_about.scss';
+import office from '../../../assets/img/office.jpg';
 import Section from '../../../HOC/Section';
-import solidFeedingImage from '../../../assets/img/solid_feeding.jpg';
 
-const about = () => {
-  return (
-    <Section id='about'>
-      <div className='container pt-2 pb-5'>
-        <div className='section-header  '>
-          <h3 className='section-title'>
-            PT SUHADA PETROLEUM
-          </h3>
-          <h6 className='section-subtitle '>
-          Established in 2000, is a company which focuses on trading and supporting of mechanical engineering, electrical, instrumentation and maintenance services especially for oil and gas industries. 
-          </h6>
-          <div className="solidFeedingImage">
-        <img src={solidFeedingImage} alt="About PT Suhada Petroleum"  className="solidFeedingImage"/>
-      </div>
-          <button className='btn'>FIND OUT MORE</button>
-        </div>
-             
-      </div>
-    </Section>
-  );
+const About = () => { // Capitalize the component name
+    return (
+      <Section id='about'>
+          <div className='section-header'>
+            <h3 className='section-title'>About Us</h3>
+          </div>
+
+          <p className='section-subtitle'>
+            PT. Suhada Petroleum, established in 2000, is a company that focuses on trading and supporting mechanical engineering, electrical, instrumentation, and maintenance services, especially for oil and gas industries.
+          </p>
+          
+          <p className='section-subtitle'>
+            We are also the official distributor for some products from all over the world. As a local company in Indonesia, we also have local content certificates, such as local content for Reciprocating Pump Package, Fire Water Pump Package, Centrifugal Pump Package, Separator, Scrubber, KO Drum, Pig Launcher, Air Receiver, and Pressure Vessel. 
+          </p>
+
+          <div className="image-container">
+            <img src={office} alt="About PT Suhada Petroleum" className="office-image" />
+          </div>
+
+          <div className='section-header'>
+            <h3 className='section-title'>Our Vision</h3>
+          </div>
+
+          <p className='section-subtitle2'>
+          To become a leading contractor and supplier company that has a strong reputation for quality and trust.
+          </p>
+          
+        
+          <div className='section-header'>
+            <h3 className='section-title'>Our Mission</h3>
+          </div>
+
+          <p className='section-subtitle2'>
+          To prioritize customer satisfaction by providing quality products and services at competitive prices as well as fostering good relationships with sustainable business partners.
+          </p>
+
+        
+      </Section>
+    );
 };
 
-export default about;
+export default About;
