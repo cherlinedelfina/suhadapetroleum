@@ -27,6 +27,9 @@ const Product = () => {
           </div>
           <div className="image-container">
             <img src={NOV} alt="NOV" className="image" />
+            <p className='distributor-text'>
+              PT. SUHADA PETROLEUM is proud to be ARROW’s exclusive distributor for Pertamina in the country of Indonesia.
+            </p>
           </div>
         </div>
       </div>

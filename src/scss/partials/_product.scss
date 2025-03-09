@@ -60,3 +60,19 @@
 .white-background {
   background-color: rgb(255, 255, 255);
 }
+
+.image-column {
+  position: relative; /* Make it a positioning context for absolute elements */
+}
+
+.distributor-text {
+  position: absolute; 
+  bottom: 20px; 
+  left: 0; 
+  right: 0; 
+  text-align: center; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  padding: 5px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+}
