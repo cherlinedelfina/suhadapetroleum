@@ -8,6 +8,7 @@ import Section from '../sections/Sections.js';
 import About from '../sections/About/About.js';
 import Contact from '../sections/Contact/Contact.js';
 import Service from '../sections/Service/Service.js';
+import Product from '../sections/Product/Product.js';
 
 const Layout = () => {
   return (
@@ -19,6 +20,7 @@ const Layout = () => {
           <Route path="/About" exact component={About} />
           <Route path="/Contact" component={Contact} />
           <Route path="/Service" component={Service} />
+          <Route path="/Product" component={Product} />
         </Switch>
       </main>
       <Footer />

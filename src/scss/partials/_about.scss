@@ -1,13 +1,17 @@
 
-
+.margin-left-text {
+    margin-left: 20px; 
+  }
 
 
 .section-subtitle {
     font-size: 17px;
+
 }
 
 .section-header {
     width: 100%;
+    margin-left: 10px;
 }
 
 .section-header .section-title{
@@ -21,10 +25,10 @@
     height: 100%;                
 }
 .office-image {
-    height: auto;           /* Maintains aspect ratio */
-    max-height: 500px;      /* Constrain max height if needed */
-    width: auto;            /* Maintain aspect ratio */
-    max-width: 600px;       /* Constrain max width to 100px */
+    height: auto;           
+    max-height: 500px;      
+    width: auto;            
+    max-width: 600px;      
 }
 
 .section-subtitle2 {

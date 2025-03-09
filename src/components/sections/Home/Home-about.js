@@ -9,7 +9,7 @@ const About = () => {
         <div className="two-column-container">
           <div className='text-column'>
             <div className='section-header'>
-              <h3 className='section-title'>PT SUHADA PETROLEUM</h3>
+              <h3 className='section-title '>PT SUHADA PETROLEUM</h3>
             </div>
             <h6 className='section-subtitle'>
               Established in 2000, is a company which focuses on trading and supporting mechanical engineering, electrical, instrumentation, and maintenance services, especially for oil and gas industries.
