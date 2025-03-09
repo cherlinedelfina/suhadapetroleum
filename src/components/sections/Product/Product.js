@@ -4,10 +4,12 @@ import NOV from '../../../assets/img/NOV.jpg';
 import SSTPump from '../../../assets/img/SSTPump.jpg';
 import Arrow from '../../../assets/img/Arrow.jpg';
 import Others from '../../../assets/img/Others.jpg';
+import Section from '../../../HOC/Section';
 
 const Product = () => {
   return (
-    <section className="products-section">
+   
+    <Section id="products">
       <div className='section-header'>
         <h3 className='section-title margin-left'>Our Products</h3>
       </div>
@@ -96,7 +98,8 @@ const Product = () => {
           </div>
         </div>
       </div>
-    </section>
+
+    </Section>
   );
 };
 

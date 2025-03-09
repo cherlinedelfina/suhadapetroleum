@@ -8,6 +8,11 @@ const Facts = () => {
   return (
     <Section id='facts'>
       <div className='facts-container'>
+      <div className='section-header'>
+            <h3 className='section-title text-center'>
+            Accreditation
+            </h3>
+          </div>
         <div className='container pt-5 pb-3'>
           <div className='row'>
            
