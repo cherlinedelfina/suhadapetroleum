@@ -30,7 +30,7 @@
   .product-list li {
     margin-bottom: 10px; /* Space between list items */
     font-size: 1rem; /* Adjust font size as needed */
-    color: #555; /* Example text color */
+    color: #494949; /* Example text color */
   }
 
   .image-container {
@@ -65,14 +65,62 @@
   position: relative; /* Make it a positioning context for absolute elements */
 }
 
-.distributor-text {
-  position: absolute; 
-  bottom: 20px; 
-  left: 0; 
-  right: 0; 
-  text-align: center; 
-  background-color: rgba(255, 255, 255, 0.7); 
-  padding: 5px; 
-  font-size: 1rem; 
+.image-description {
   font-weight: bold; 
+  margin-right: 205px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
