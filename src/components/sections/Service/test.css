@@ -1,0 +1,61 @@
+/* test.css */
+
+/* Flexbox layout for the Services section */
+.flex {
+    display: flex;
+    padding-right: 10rem;
+  }
+
+  /* Add this to your test.css */
+.padding-left {
+    padding-left: 8rem; /* Adjust this value as needed */
+  }
+
+  .padding-bottom {
+    padding-bottom: 1rem; /* Adjust this value as needed */
+  }
+
+  .custom-heading {
+    font-size: 3rem;
+  }
+  
+  
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .services-title {
+    font-size: 3rem;  /* Equivalent to text-6xl in Tailwind */
+    font-weight: bold;
+    color: #B8B138; /* Set the color to #B8B138 */
+    margin-bottom: 2rem; /* Space below the title */
+  }
+
+  /* Add more space between list items */
+.service-list li {
+    margin-bottom: 0.5rem;  /* Adjust the value for desired spacing */
+    font-size: 1.3rem;
+  }
+  
+  .med-text {
+    font-size: 1.3rem;  /* Adjust the value as needed */
+  }
+
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .space-x-6 {
+    gap: 24px; /* Adjust the gap between the image and text */
+  }
+  
+  .w-2 {
+    width: 66.6667%;
+  }
+  
+  .w-1 {
+    width: 33.3333%;
+  }
+  
