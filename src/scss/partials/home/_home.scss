@@ -1,81 +1,33 @@
-#home {
-  height: calc(100vh - 100px); 
-  position: relative;
-  
-  > div {
-    height: 100%; 
-  }
-
-  .home-content {
-    position: absolute; 
-    top: 20px; 
-    left: 30px;
-
-    height: 100%; 
-    background-position: center;
-    background-size: cover;
-
-    &:before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: #1f2022;
-      opacity: 0.5; 
-    }
-
-    
-  }
+#about {
+  background-color: #f6f8fb; /* Background color for the About section */
 }
 
-
-.slideshow-container {
-  position: relative;
-  width: 100%; 
-  overflow: hidden; 
+.two-column-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-top: 20px; 
 }
 
-.mySlides {
-  display: none; 
+.text-column {
+  flex: 1; 
+  margin-right: 20px; 
 }
 
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  z-index: 2;
+.image-column {
+  flex: 1; 
 }
 
-.prev {
-  left: 10px; 
+.solidFeedingImage {
+  width: 100%;           
+  max-width: 500px;     
+  height: auto;         
+  border-radius: 5px;   
+  display: block;       
+  margin-top: 10%;       
 }
 
-.next {
-  right: 10px; /* Adjust as necessary */
-}
-
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171; 
+.btn {
+  margin-top: 20px;
+  background-color: #FFD700; 
 }
