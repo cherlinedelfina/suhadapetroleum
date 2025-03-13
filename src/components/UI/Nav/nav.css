@@ -1,0 +1,105 @@
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+    left: 0;
+    height: 80px;
+    z-index: 1000;
+    overflow: hidden;
+    background: white;
+}
+
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    background: #b8b238;
+    clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 35% 100%);
+    z-index: -1;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.logoImage {
+    width: 350px;
+    height: auto;
+    margin-left: -100px;
+}
+
+.nav-links {
+    margin-top: 5px;
+    
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 25px;
+}
+
+.nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: black;
+        flex-direction: column;
+        display: none;
+        padding: 10px;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}

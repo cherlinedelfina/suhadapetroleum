@@ -1,45 +1,66 @@
-/* test.css */
 
-/* Flexbox layout for the Services section */
 .flex {
     display: flex;
     padding-right: 10rem;
   }
 
-  /* Add this to your test.css */
 .padding-left {
-    padding-left: 8rem; /* Adjust this value as needed */
+    padding-left: 8rem; 
   }
 
   .padding-bottom {
-    padding-bottom: 1rem; /* Adjust this value as needed */
+    padding-bottom: 1rem; 
   }
 
   .custom-heading {
-    font-size: 3rem;
+    font-size: 55px;
+    font-weight: 700;
   }
+
+  body {
+    background-color: #F8F8F8 !important;
+    padding-top: 100px; 
+}
   
-  
+.slick-arrow {
+  display: none !important;
+}
+
+.custom-next-arrow, .custom-prev-arrow {
+  display: block !important;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
   
   .justify-between {
     justify-content: space-between;
   }
   
   .services-title {
-    font-size: 3rem;  /* Equivalent to text-6xl in Tailwind */
-    font-weight: bold;
-    color: #B8B138; /* Set the color to #B8B138 */
-    margin-bottom: 2rem; /* Space below the title */
+    font-size: 60px;
+    font-weight: 900;
+    color: #b8b238;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding-bottom: 30px;
+    padding-top: -30px;
+    margin-top: -30px;
+    padding-left: 10px;
   }
 
-  /* Add more space between list items */
+
+ 
+
 .service-list li {
-    margin-bottom: 0.5rem;  /* Adjust the value for desired spacing */
+    margin-bottom: 0.5rem;  
     font-size: 1.3rem;
   }
   
   .med-text {
-    font-size: 1.3rem;  /* Adjust the value as needed */
+    font-size: 1.3rem;  
   }
 
   
@@ -48,7 +69,7 @@
   }
   
   .space-x-6 {
-    gap: 24px; /* Adjust the gap between the image and text */
+    gap: 24px; 
   }
   
   .w-2 {

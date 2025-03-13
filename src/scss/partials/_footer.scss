@@ -1,5 +1,5 @@
 footer {
-  background: #292f35;
+  background: #DADADA;
   .footer-title {
     position: relative;
     margin-bottom: 2rem;
@@ -9,28 +9,55 @@ footer {
       position: absolute;
       width: 50px;
       height: 2px;
-      background: #248eff;
       top: 30px;
     }
   }
   .bottom-footer {
-    background-color: #181d21;
-    color: #6c757d;
+    background-color: #DADADA;
+    color: #DADADA;
   }
-  .quick-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  
+  .footer-content2 {padding-left: 24px;}
+  
 
-    a {
-      text-decoration: none;
-      font-size: 0.9rem;
-      display: inline-block;
-      padding: 0.3rem 0;
-      color: #6c757d !important;
-      &:hover {
-        color: lighten(#6c757d, 20%) !important;
-      }
-    }
-  }
+.quick-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-logo {
+  width: 30px; 
+  height: auto;
+  display: block;
+}
+
+
+.quick-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 0.3rem 0;
+  color: #4B4B4B;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.quick-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #4B4B4B; 
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quick-links a:hover::after {
+  width: 100%;
+}
+
 }

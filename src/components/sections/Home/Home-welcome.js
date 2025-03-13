@@ -87,7 +87,6 @@ const Home = () => {
         </div>
         <br />
 
-        {/* The dots/circles */}
         <div style={{ textAlign: "center" }}>
           <span className="dot" onClick={() => currentSlide(1)}></span>
           <span className="dot" onClick={() => currentSlide(2)}></span>
