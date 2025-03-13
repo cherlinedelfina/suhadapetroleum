@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Link from '../Link/Link';
+import { Link } from 'react-router-dom'; 
 import logo from '../../../assets/img/logo.jpg';
-import hamburgerIcon from '../../../assets/img/hamburger-icon.jpg'; // Adjust the path as needed
-
+import './nav.css'; 
 
 const Nav = () => {
   const [navClass, setNavClass] = useState('');
@@ -22,51 +21,23 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={`navbar navbar-expand-md ${navClass}`}>
-      <div className='container'>
-        <div className='logo'>
-          <img src={logo} alt='about company' className='logoImage' />
+    <nav className={`navbar ${navClass}`}>
+      <div className="container">
+        <div className="logo">
+          <img src={logo} alt="Company Logo" className="logoImage" />
         </div>
-        <button
-          className={`navbar-toggler ${toggledNav ? 'open' : ''}`}
-          type='button'
-          onClick={toggleNav}
-          aria-controls='navbarNav'
-          aria-expanded={toggledNav ? "true" : "false"}
-          aria-label='Toggle navigation'
-        >
-          <img src={hamburgerIcon} alt="Menu" className="hamburger-icon" /> 
+
+        <button className="nav-toggle" onClick={toggleNav}>
+          ☰
         </button>
 
-        <div className={`collapse navbar-collapse ${toggledNav ? 'show' : ''}`} id='navbarNav'>
-          <ul className='navbar-nav ml-auto'>
-            <li className='nav-item'>
-              <Link target='home'  classes='nav-link'>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link target='about' classes='nav-link'>
-                About Us
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link target='products' classes='nav-link'>
-                Products
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link target='blog' classes='nav-link'>
-                Services
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link target='contact' classes='nav-link'>
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={`nav-links ${toggledNav ? 'nav-active' : ''}`}>
+          <li><Link to="/" onClick={() => setToggledNav(false)}>Home</Link></li>
+          <li><Link to="/About" onClick={() => setToggledNav(false)}>About</Link></li>
+          <li><Link to="/Service" onClick={() => setToggledNav(false)}>Service</Link></li>
+          <li><Link to="/Product" onClick={() => setToggledNav(false)}>Product</Link></li>
+          <li><Link to="/Contact" onClick={() => setToggledNav(false)}>Contact Us</Link></li>
+        </ul>
       </div>
     </nav>
   );

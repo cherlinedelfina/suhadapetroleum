@@ -3,25 +3,25 @@
 }
 
 .navbar-toggler {
-  background: transparent; /* Make sure the background is transparent */
-  border: none; /* Remove any borders */
+  background: transparent; 
+  border: none; 
 }
 
 .hamburger-icon {
-  width: 30px;  /* Adjust width and height according to your needs */
-  height: auto; /* Keep the aspect ratio */
+  width: 30px;  
+  height: auto; 
 }
 
 .navbar-collapse {
-  transition: max-height 0.3s ease; /* Smooth transition for dropdown */
+  transition: max-height 0.3s ease;
 }
 
 .navbar-toggler-icon {
-  background-color: black; /* Color for hamburger icon */
+  background-color: black; 
 }
 
 .nav-item {
-  margin: 5px 0; /* Spacing between items */
+  margin: 5px 0; 
 }
 .logoImage {
   width: fit-content;

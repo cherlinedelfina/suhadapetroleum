@@ -15,7 +15,6 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import './partials/footer';
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
   height: 100vh;
@@ -26,11 +25,11 @@ body {
 
   .solidFeedingImage {
     position: absolute;
-    right: 20%; /* Distance from right side */
-    max-width: 200px; /* Adjust this value to desired size */
+    right: 20%;
+    max-width: 200px; 
   
     transform: translateY(-80%);
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
   }
 
 
