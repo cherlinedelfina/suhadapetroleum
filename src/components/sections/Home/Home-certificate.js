@@ -8,8 +8,8 @@ const Facts = () => {
   return (
     <Section id='facts'>
       <div className='facts-container'>
-      <div className='section-header'>
-            <h3 className='section-title text-center'>
+      <div className='main-header center-text'>
+            <h3 className='main-title center-text'>
             Accreditation
             </h3>
           </div>
@@ -27,7 +27,7 @@ const Facts = () => {
          
             <div className='col-sm-6 col-md-4 text-center'>
               <div className="ISO-container"> 
-                <img src={ISO3} alt="ISO2" className="IOS1" />
+                <img src={ISO2} alt="ISO2" className="IOS1" />
               </div>
               <h5 className='facts-title'>Environmental</h5>
               <h5 className='facts-title'>ISO 14001-2015</h5>
