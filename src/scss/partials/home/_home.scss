@@ -1,0 +1,33 @@
+#about {
+  background-color: #f6f8fb; /* Background color for the About section */
+}
+
+.two-column-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-top: 20px; 
+}
+
+.text-column {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+.image-column {
+  flex: 1; 
+}
+
+.solidFeedingImage {
+  width: 100%;           
+  max-width: 500px;     
+  height: auto;         
+  border-radius: 5px;   
+  display: block;       
+  margin-top: 10%;       
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: #FFD700; 
+}

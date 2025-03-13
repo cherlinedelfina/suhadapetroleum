@@ -1,21 +1,20 @@
 import React, { Fragment } from 'react';
 
-import Home from './Home/Home';
-import About from './About/About';
-import Service from './Service/Service';
-import Facts from './Facts/Facts';
-import Blog from './Blog/Blog';
-import Contact from './Contact/Contact';
-import MapMarker from './MapMarker/MapMarker';
+import Home from './Home/Home-welcome';
+import About from './Home/Home-about';
+import Project from './Home/Home-projects';
+import Certificate from './Home/Home-certificate';
+import Client from './Home/Home-client';
+
 
 const sections = () => {
   return (
     <Fragment>
       <Home />
       <About />
-      <Facts />
-      <Service />
-      <Blog />
+      <Certificate />
+      <Project />
+      <Client />
      
     </Fragment>
   );

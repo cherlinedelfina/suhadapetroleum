@@ -3,6 +3,7 @@ import Link from '../Link/Link';
 import logo from '../../../assets/img/logo.jpg';
 import hamburgerIcon from '../../../assets/img/hamburger-icon.jpg'; // Adjust the path as needed
 
+
 const Nav = () => {
   const [navClass, setNavClass] = useState('');
   const [toggledNav, setToggledNav] = useState(false);
@@ -50,7 +51,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link target='services' classes='nav-link'>
+              <Link target='products' classes='nav-link'>
                 Products
               </Link>
             </li>
