@@ -1,103 +1,198 @@
 body {
   background-color: #F8F8F8 !important;
-  padding-top: 100px; 
+  padding-top: 100px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.brand-description {
+  margin-right: 200px;
+  @media (max-width: 768px) {
+    margin-right: 0 !important;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Section Header */
 .section-header .section-title {
-  font-size: 100px; 
+  font-size: 100px;
   display: flex;
-  justify-content: left; 
-  align-items: flex-start; /* Changed to align properly */
+  justify-content: left;
+  align-items: flex-start;
   width: 100%;
   color: #b8b238;
 }
 
-.product-list li {
-  margin-bottom: 5px; 
+/* Product List */
+.product-list {
+  padding-left: 20px;
 }
 
+.product-list li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #494949;
+}
+
+/* Image Description */
 .image-description {
-  font-family: Arial, sans-serif !important; 
-  font-weight: 900 !important; 
-  color: black; 
+  font-family: Arial, sans-serif !important;
+  font-weight: 900 !important;
+  color: black;
   text-align: left !important;
 }
 
+/* Two Column Container */
 .two-column-container {
-  display: flex; 
-  justify-content: space-between; 
-  
-  .text-column {
-    width: 48%; 
-    padding: 15px; 
-    border-radius: 8px; 
-    color: black; 
+  display: flex;
+  justify-content: space-between;
+}
 
-    ul.product-list {
-      list-style-type: none;
-      padding: 0; 
-      margin: 0 0 20px; 
+.text-column {
+  width: 48%;
+  padding: 15px;
+  border-radius: 8px;
+  color: black;
 
-      li {
-        font-size: 20px; 
-        padding-right: 30px;
-        padding-bottom: 7px;
-        line-height: 1.5; 
-      }
+  ul.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+
+    li {
+      font-size: 20px;
+      padding-right: 30px;
+      padding-bottom: 7px;
+      line-height: 1.5;
     }
+  }
 
-    .image-description {
-      font-size: 14px; 
-      color: black; 
-      padding-top: 10px; 
-      font-weight: bold;
+  .image-description {
+    font-size: 14px;
+    color: black;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+}
+
+/* Three Column Container */
+.three-column-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    .three-column-container {
+      grid-template-columns: 1fr; /* Stack items in one column on mobile */
     }
   }
 }
 
-.three-column-container {
-  display: flex; /* Ensure three columns layout */
-    
-  .text-column {
-    flex: 1; /* Allow even spacing between columns */
-    
-    h3 {
-      font-size: 50px; 
-    }
+.text-column {
+  flex: 1;
+}
 
-    li {
-      font-size: 20px; 
-      padding-bottom: 7px;
-      line-height: 1.5; 
-    }
+.image-column {
+  position: relative;
+}
 
-    ul {
-      padding-left: 10px; 
-    }
-  }
+/* Product Item */
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Margin Left */
+.margin-left {
+  margin-left: 0;
+}
+
+/* Image Styles */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+  height: auto;
+  max-height: 400px;
+  width: auto;
+  max-width: 400px;
 }
 
 @media (max-width: 768px) {
+  /* Prevent any horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Responsive Adjustments */
+  .section-title {
+    font-size: 36px !important; /* Smaller title on mobile */
+    padding-left: 15px;
+    text-align: center;
+  }
+
+  .products-container {
+    grid-template-columns: 1fr; /* One column layout on mobile */
+  }
+
   .two-column-container {
     flex-direction: column; /* Stack columns vertically on mobile */
     width: 100%; /* Make sure the container is full width */
   }
 
-  .text-column, .image-column {
+  .text-column,
+  .image-column,
+  .product-item {
     width: 100%; /* Each column takes full width on mobile */
+    padding: 10px 20px; /* Adjust padding */
   }
 
   .image {
-    height: 150px; /* Fixed height on mobile */
-    object-fit: cover; /* Maintain aspect ratio */
-  }
-
-  .margin-left {
-    margin-left: 0; /* Reset left margin on mobile */
+    width: 100%; /* Make image full width */
+    height: auto; /* Set fixed height for mobile */
+    object-fit: cover; /* Ensure the image covers the area */
+    max-width: 100%; /* Prevent exceeding screen width */
+    margin-left: 0px;
   }
 
   .image-description {
     margin-top: 10px; /* Space between image and text */
-    text-align: center; /* Center align description under image */
+    font-size: 14px; /* Smaller font size */
+    text-align: center !important;
+    padding: 0 15px;
+  }
+
+  .services-title {
+    font-size: 40px; /* Decrease font size for mobile */
+  }
+
+  .product-list li {
+    font-size: 16px !important; /* Adjust size for mobile */
+  }
+
+  .product-list {
+    margin-left: 2px;
+    padding-left: 10px;
+    padding-right: 1px;
+  }
+
+  .custom-heading {
+    font-size: 35px; /* Smaller heading on mobile */
+  }
+
+  .three-column-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
   }
 }

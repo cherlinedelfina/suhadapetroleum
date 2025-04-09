@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/img/logo.jpg';
-import './nav.css'; 
+import './nav.css';
 
 const Nav = () => {
   const [navClass, setNavClass] = useState('');
@@ -22,9 +22,11 @@ const Nav = () => {
 
   return (
     <nav className={`navbar ${navClass}`}>
-      <div className="container">
+      <div className="nav-container">
         <div className="logo">
-          <img src={logo} alt="Company Logo" className="logoImage" />
+          <Link to="/">
+            <img src={logo} alt="Company Logo" className="logoImage" />
+          </Link>
         </div>
 
         <button className="nav-toggle" onClick={toggleNav}>

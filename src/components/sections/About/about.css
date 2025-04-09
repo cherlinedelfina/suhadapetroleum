@@ -9,12 +9,12 @@
     line-height: 1.6;
     color: black; 
     text-align: justify;
-    margin: 20px auto;
+    margin: 20px auto; /* Adjusted for general */
     padding-left: 150px; 
     padding-right: 150px;
     padding-top: 30px;
-}
-
+  }
+  
 
 .section-title {
     font-size: 30px; 
@@ -110,3 +110,47 @@ body {
     border: 0;
     border-radius: 10px;
 }
+
+.section-headers {
+    width: 100%;
+  }
+  
+  .about-title {
+    font-size: 60px; 
+    text-align: left; 
+    color: #b8b238; 
+    font-weight: 900; 
+    font-family: Arial, sans-serif; 
+    padding-left: 140px; 
+    padding-right: 150px; 
+    padding-top: 60px; 
+  }
+@media (max-width: 768px) {
+    .slider-image {
+        height:auto;
+    }
+    .section-subtitle {
+      margin-left: 2px; /* Change left margin on mobile */
+      padding-left: 10px; /* Optional: adjust padding for mobile */
+      padding-right: 10px; /* Optional: adjust padding for mobile */
+    }
+    .section-headers {
+        padding-left: 10px; /* Adjust padding for mobile */
+        padding-right: 10px; /* Adjust padding for mobile */
+      }
+    
+      .about-title {
+        
+        text-align: center; /* Center text for better mobile presentation */
+        padding-left: 0; /* Remove side padding on mobile */
+        padding-right: 0; /* Remove side padding on mobile */
+      }
+
+
+.office-image {
+    height: auto;
+    max-height: 300px;
+    width: auto;
+    max-width: 380px;
+}
+  }

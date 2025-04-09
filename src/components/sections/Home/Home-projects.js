@@ -15,7 +15,6 @@ const HomeProject = () => {
           className="projects_bg" 
           style={{ width: "100%", height: "800px", objectFit: "cover" }} 
         />
-
        
         <div className="projects-container" style={{ 
           position: 'absolute', 
@@ -31,65 +30,35 @@ const HomeProject = () => {
           zIndex: 2 
         }}>
 
-        
-          <div className="project-item" style={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            width: '50%', 
-            backgroundColor: 'white', 
-            padding: '20px', 
-            borderRadius: '10px', 
-            boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' 
-          }}>
-       
-            <div className="image-column" style={{ flex: 1 }}>
+          <div className="project-item">
+            <div className="image-column">
               <img 
                 src={image1} 
                 alt="NOV Reciprocating Pump Model 1759 Package" 
-                style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '5px' }} 
+                className="project-image"
               />
             </div>
 
-            
-            <div className="text-column" style={{ 
-              flex: 1, 
-              paddingLeft: '20px' 
-            }}>
+            <div className="text-column">
               <h5 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>
                 NOV Reciprocating Pump Model 1759 Package
               </h5>
-            
             </div>
           </div>
 
-
-          <div className="project-item" style={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            width: '50%', 
-            backgroundColor: 'white', 
-            padding: '20px', 
-            borderRadius: '10px', 
-            boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' 
-          }}>
-           
-            <div className="image-column" style={{ flex: 1 }}>
+          <div className="project-item">
+            <div className="image-column">
               <img 
                 src={image2} 
                 alt="ARROW Gas Engine Model C-106" 
-                style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '5px' }} 
+                className="project-image"
               />
             </div>
 
-           
-            <div className="text-column" style={{ 
-              flex: 1, 
-              paddingLeft: '20px' 
-            }}>
+            <div className="text-column">
               <h5 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>
                 ARROW Gas Engine Model C-106
               </h5>
-              
             </div>
           </div>
 

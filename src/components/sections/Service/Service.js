@@ -17,18 +17,19 @@ function NextArrow(props) {
   return (
     <div
       className="custom-next-arrow"
+      onClick={onClick}
       style={{ 
         display: "block",
         background: `url(${rightarrow}) no-repeat center center`,
         backgroundSize: "contain",
         position: "absolute",
-        top: "120px",
-        right: "100px",
-        width: "100px", 
-        height: "100px", 
-        zIndex: 1
+        top: "50%", 
+        right: "10px",
+        width: "50px", 
+        height: "50px", 
+        zIndex: 1,
+        cursor: "pointer", 
       }}
-      onClick={onClick}
     />
   );
 }
@@ -38,23 +39,22 @@ function PrevArrow(props) {
   return (
     <div
       className="custom-prev-arrow" 
+      onClick={onClick}
       style={{ 
         display: "block",
         background: `url(${leftarrows}) no-repeat center center`,
         backgroundSize: "contain",
         position: "absolute",
-        top: "120px",
-        left: "100px",
-        width: "100px", 
-        height: "100px", 
-        zIndex: 1
+        top: "50%", 
+        left: "10px",
+        width: "50px", 
+        height: "50px", 
+        zIndex: 1,
+        cursor: "pointer", 
       }}
-      onClick={onClick}
     />
   );
 }
-
-
 
 const FacilitiesCarousel = ({ updateLocation }) => {
   const settings = {
@@ -75,29 +75,31 @@ const FacilitiesCarousel = ({ updateLocation }) => {
   };
 
   return (
-    <div className="relative h-screen justify-center items-center">
-      <Slider {...settings} className="w-[750px]">
-        {[workshop1, workshop2].map((src, index) => (
-          <div key={index} className="justify-center">
-            <img
-              src={src}
-              alt={`Facility ${index + 1}`}
-              className="rounded-lg mx-auto"
-              style={{
-                width: "1000px",
-                height: "333px",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="relative w-full">
+        <Slider {...settings}>
+            {/* Centering using flex in the slider item */}
+            {[workshop1, workshop2].map((src, index) => (
+                <div key={index} className="flex justify-center items-center">
+                    <img
+                        src={src}
+                        alt={`Facility ${index + 1}`}
+                        className="rounded-lg"
+                        style={{
+                            width: "100%",
+                            height: "auto", // Adjust height to auto for responsiveness
+                            maxHeight: "333px", // Set maximum height for larger screens
+                            objectFit: "cover", // Ensure the image covers the area
+                            marginLeft: "80px",
+ marginRight: "60px",
+
+                        }}
+                    />
+                </div>
+            ))}
+        </Slider>
     </div>
   );
 };
-
-
-
 
 const Service = () => {
   const [address, setAddress] = useState(
@@ -109,31 +111,30 @@ const Service = () => {
       <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
       <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
 
-      <div className="flex justify-between items-center padding-left">
-        <div className="w-2">
-          <h2 className="services-title">Our Services</h2>
-          <ul className="service-list list-disc pl-5 text-xl text-black">
-            <li>General Overhaul Pump & Gas Engine Service</li>
-            <li>Pump & Gas Engine Repair</li>
-            <li>Project Management & Technical Support</li>
-            <li>Planning & Scheduling</li>
-            <li>Procurement & Expediting</li>
-            <li>On-Site Installation</li>
-            <li>Start-Up & Commissioning</li>
-            <li>Equipment Operation & Maintenance</li>
-            <li>Quality Assurance & Control</li>
-          </ul>
-        </div>
+      <div className="services-container">
+  <div className="services-text-column">
+    <h2 className="services-title">Our Services</h2>
+    <ul className="service-list list-disc pl-5 text-xl text-black">
+      <li>General Overhaul Pump & Gas Engine Service</li>
+      <li>Pump & Gas Engine Repair</li>
+      <li>Project Management & Technical Support</li>
+      <li>Planning & Scheduling</li>
+      <li>Procurement & Expediting</li>
+      <li>On-Site Installation</li>
+      <li>Start-Up & Commissioning</li>
+      <li>Equipment Operation & Maintenance</li>
+      <li>Quality Assurance & Control</li>
+    </ul>
+  </div>
 
-        <div className="w-1" style={{ width: '400px', height: '400px' }}>
-          <img
-              src={serviceImage}
-              alt="Workshop Service"
-              style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-              className="rounded-lg shadow-lg"
-          />
-      </div></div>
-
+  <div className="services-image-column">
+    <img
+      src={serviceImage}
+      alt="Workshop Service"
+      className="servicesImage"
+    />
+  </div>
+</div>
 
       <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
       <h2 className="text-10xl font-bold text-transparent pt-32">&nbsp;</h2>
